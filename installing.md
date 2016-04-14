@@ -16,7 +16,9 @@ npm install -g candycane-cli
 Now that we have Candycane CLI installed on our system, we can begin to start our new application by running the following command in our terminal:
 
 ```bash
-candycane new todo-app
+candycane new reminders-api -sn
+cd reminders-api
+npm install
 ```
 
 [Next - Creating Migrations](./database-migrations.md)
