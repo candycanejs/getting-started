@@ -108,7 +108,7 @@ export default class extends Action {
 And we can make our cURL request again:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{
+curl -X PUT -H "Content-Type: application/json" -d '{
   "data": {
     "type": "lists",
     "attributes": {
@@ -123,3 +123,5 @@ And our expected result is something like:
 ```json
 {"links":{"self":"http://localhost/lists"},"data":{"type":"lists","id":"2","attributes":{"title":"Groceries"},"links":{"self":"http://localhost/lists/2"}}}
 ```
+
+[Next - Relational Data with Bookshelf](./relational-data.md)
