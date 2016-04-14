@@ -69,4 +69,4 @@ curl -X DELETE -H "Content-Type: application/json" "http://localhost:3000/lists/
 
 And we should get a blank response back from the server with a 204 error code.
 
-[Next - Bookshelf Relationships](./bookshelf-relationships.md)
+[Next - Parsing JSON API Requests](./json-api-requests.md)
