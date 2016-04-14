@@ -14,7 +14,7 @@ export default {
   tableName: `lists`,
 
   reminders() {
-    this.hasMany(`reminder`);
+    return this.hasMany(`reminder`);
   }
 }
 ```
@@ -26,7 +26,7 @@ export default {
   tableName: `reminders`,
 
   list() {
-    this.belongsTo(`list`);
+    return this.belongsTo(`list`);
   }
 }
 ```
