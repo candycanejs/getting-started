@@ -110,4 +110,4 @@ Now that we have our migrations defined, we can run them from our command line:
 knex migrate:latest
 ```
 
-[Next - Basic Actions](./basic-actions.md)
+[Next - Developing With Candycane](./dev-environment.md)
