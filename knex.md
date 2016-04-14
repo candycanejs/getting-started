@@ -64,7 +64,7 @@ data() {
 We ran a `then` function off of the query so that we could format our data a bit more before returning it to our user.
 Since Candycane is promise aware, we can easily return promises from our `data` hook instead of having to manually work through callbacks and wondering when to call `res.send`.
 
-To see this in action, let's use CURL to create a new item in our `lists` table:
+To see this in action, let's use cURL to create a new item in our `lists` table:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{

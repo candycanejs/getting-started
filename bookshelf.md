@@ -39,7 +39,7 @@ Just like the `db` instance in our app container, `candycane-bookshelf` register
 So, we can get Bookshelf with ``this.app.make(`store`)``.
 Once we have Bookshelf, we can look up a model from the registry and run `fetchAll`:
 
-```
+```js
 data() {
   const bookshelf = this.app.make(`store`);
   const List = bookshelf.model(`list`);

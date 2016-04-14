@@ -45,7 +45,7 @@ To see if our server is running, we can go to `http://localhost:3000` and we sho
 }
 ```
 
-We could also view the results by making a CURL request from a new terminal:
+We could also view the results by making a cURL request from a new terminal:
 
 ```bash
 curl -X GET "http://localhost:3000"

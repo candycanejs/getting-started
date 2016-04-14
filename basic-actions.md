@@ -64,7 +64,7 @@ export default class extends Action {
 }
 ```
 
-Now that we have our action registered and a `data` method defined, let's make a post request using CURL:
+Now that we have our action registered and a `data` method defined, let's make a post request using cURL:
 
 ```bash
 curl -X POST "http://localhost:3000/info"
@@ -94,7 +94,7 @@ export default class extends Action {
 }
 ```
 
-And let's make a new CURL request sending our Homer Simpson information from before:
+And let's make a new cURL request sending our Homer Simpson information from before:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{
