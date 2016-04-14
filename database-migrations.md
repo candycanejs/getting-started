@@ -33,11 +33,11 @@ knex migrate:make create_lists_table
 Now let's go into the new file in the `migrations` directory, it should look like this:
 
 ```js
-export.up = function(knex, Promise) {
+exports.up = function(knex, Promise) {
 
 }
 
-export.down = function(knex, Promise) {
+exports.down = function(knex, Promise) {
 
 }
 ```
@@ -48,7 +48,7 @@ Now, we will need to start by using KNEX's schema builder to create a table for 
 We will return this so that KNEX will wait for this to complete when running our migration:
 
 ```js
-export.up = function(knex, Promise) {
+exports.up = function(knex, Promise) {
   return knex.schema.createTable(`lists`);
 }
 ```
@@ -57,7 +57,7 @@ With our table created, we will need to add columns in the table to store our da
 We will create an auto-incrementing `id` column, and a string column to store our `title`:
 
 ```js
-export.up = function(knex, Promise) {
+exports.up = function(knex, Promise) {
   return knex.schema.createTable(`lists`, (table) => {
     table.increments(`id`);
 
@@ -70,7 +70,7 @@ To wrap up this migration, we will need to define our `down` function.
 Here, we will use the KNEX schema builder's `dropTable` method to drop the `lists` table from our dtabase:
 
 ```js
-export.down = function(knex, Promise) {
+exports.down = function(knex, Promise) {
   knex.dropTable(`lists`);
 }
 ```
@@ -87,7 +87,7 @@ Since we need to have our reminders `belongTo` a single "List" object, we will n
 We will also need a boolean column for `done` and a string for `name`.
 
 ```js
-export.up = function(knex, Promise) {
+exports.up = function(knex, Promise) {
   return knex.schema.createTable(`reminders`, (table) => {
     table.increments(`id`);
 
@@ -95,11 +95,11 @@ export.up = function(knex, Promise) {
     table.boolean(`done`);
     table.string(`name`);
   })
-}
+};
 
-export.down = function(knex, Promise) {
+exports.down = function(knex, Promise) {
   return knex.schema.dropTable(`reminders`);
-}
+};
 ```
 
 ## Running Migrations

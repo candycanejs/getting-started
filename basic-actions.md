@@ -109,4 +109,4 @@ Our server should respond with:
 {"request-data":{"firstName":"Homer","lastName":"Simpson"}}
 ```
 
-[Next - Working with Bookshelf Models](./bookshelf.md)
+[Next - Working with KNEX](./knex.md)
