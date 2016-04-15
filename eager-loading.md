@@ -39,7 +39,7 @@ data() {
   const id = this.request.params.id;
   const title = this.request.body.data.attributes.title;
 
-  return List.where({id}).fetch()
+  return List.where({id}).fetch({withRelated: `reminders`})
     .then((list) => {
       list.set({title});
 
