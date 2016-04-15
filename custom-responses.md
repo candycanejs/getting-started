@@ -8,7 +8,7 @@ So, let's use these two methods to implement deleting records from our database 
 First we'll register our `router.js` to respond to `DELETE` request with a `lists/destroy` action:
 
 ```js
-this.delete(`lists/:id`, `lists/destroy`);
+this.delete(`/lists/:id`, `lists/destroy`);
 ```
 
 Next, we'll setup our standard action to delete a record based on it's `id`:
