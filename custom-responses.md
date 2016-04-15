@@ -5,7 +5,7 @@ In our action, we can break out of the standard response chain by calling `this.
 Along with this, we can also use `this.setStatus` in our action to set the status code.
 
 So, let's use these two methods to implement deleting records from our database using Bookshelf.
-First we'll register our app to respond to `DELETE` request with a `lists/destroy` action:
+First we'll register our `router.js` to respond to `DELETE` request with a `lists/destroy` action:
 
 ```js
 this.delete(`lists/:id`, `lists/destroy`);
