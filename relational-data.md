@@ -70,7 +70,7 @@ So, let's look at the incoming request for storing a new reminder:
       "type": "reminders",
       "attributes": {
         "name": "Water Plants",
-        "done": "false"
+        "done": false
       },
       "relationships": {
         "list": {
