@@ -129,4 +129,4 @@ And our response:
 {"links":{"self":"http://localhost/reminders"},"data":{"type":"reminders","id":"1","attributes":{"name":"Water Plants","done":"false"},"links":{"self":"http://localhost/reminders/1"}}}
 ```
 
-[Next - Including Related Models](./related-models.md)
+[Next - Sideloading and Eager Loading Models](./eager-loading.md)

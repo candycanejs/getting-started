@@ -1,4 +1,4 @@
-# Related Models
+# Sideloading and Eager Loading Models
 
 Now that we have `reminders` that belong to our `list` resources, our API should return these relationships and sideload them as "included" resources for our JSON API endpoints.
 
@@ -121,3 +121,5 @@ And now we have a huge response with our sideloaded data:
   ]
 }
 ```
+
+[Next - Not Found Errors](./not-found.md)
