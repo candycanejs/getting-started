@@ -72,7 +72,7 @@ export default class extends Action {
 
     const id = this.request.params.id;
 
-    return Reminder.where({id}).fetch({withRelated: `reminders`});
+    return Reminder.where({id}).fetch({withRelated: `list`});
   }
 
   after(reminder) {
