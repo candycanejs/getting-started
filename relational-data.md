@@ -7,7 +7,7 @@ Luckily, Bookshelf.js makes these types of data relations easy.
 
 ## Defining Relationships with Bookshelf
 
-To start, let's update our `list` model to include a relationship that says it should have many reminders:
+To start, let's update our `list` model in `list.js` to include a relationship that says it should have many reminders:
 
 ```js
 export default {
@@ -19,7 +19,7 @@ export default {
 }
 ```
 
-Next, we'll need to create a new model for our reminders and we'll define their parent `list` relationship as `belongsTo`
+Next, we'll need to create a new model in `reminder.js`for our reminders and we'll define their parent `list` relationship as `belongsTo`
 
 ```js
 export default {
